@@ -1,1 +1,13 @@
 Test automation for MovieTickets.com
+
+Selenium + JUnit test cases for ZipCodeLookup and TopMovies are available under java/MovieTickets.
+
+DOS batch files are available for executing tests from the command line:
+ ZipCodeLookup.bat
+ TopMovies.bat
+All that's required to run these tests are to have Java & Firefox installed.  
+
+But running from the command line will not be as illustrative as running from within the Eclipse IDE via the included Junit runner.
+To run from Eclipse you need to have Eclipse 3.6(Helios) or 3.7 (Indigo) installed and create a project in Eclipse.  
+You then need to add selenium-server-standalone-2.x.x.jar to the build path and run as Junit 4 test case.
+
