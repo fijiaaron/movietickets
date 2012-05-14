@@ -159,10 +159,7 @@ public class ZipCodeLookup extends SeleniumTestBase {
 		String ticketingTheaters = selenium.getText(theatersPage.numberOfTicketingTheaters);
 		System.out.println(ticketingTheaters);
 		int start = "MAP".length(); // the word "MAP" is at the start of the string
-		System.out.println(start);
 		int end = ticketingTheaters.indexOf("ticketing theater"); // the number is after "ticketing theater"
-		System.out.println(end);
-		System.out.println(ticketingTheaters.substring(start, end));
 		int actualNumberOfTicketingTheaters = Integer.valueOf(ticketingTheaters.substring(start, end).trim()); // parse the string for integer value
 		System.out.println(actualNumberOfTicketingTheaters);
 		assertEquals(expectedNumberOfTicketingTheaters, actualNumberOfTicketingTheaters);
